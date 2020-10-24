@@ -1,0 +1,8 @@
+{
+  "id":2,
+  "name":"Max",
+  "lastName":"Guru",
+  "databaseUrl": "localhost:3306",
+  "password": 124,
+  "user": "max"
+}
