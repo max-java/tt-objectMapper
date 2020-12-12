@@ -1,4 +1,4 @@
-package by.jrr.objectmapper.bean;
+package by.jrr.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Person {
-    Long id;
-    String name;
-    String lastName;
+public class Human {
+
+    String humanName;
+    String humanSurname;
 }

@@ -1,4 +1,4 @@
-package by.jrr.mapstruct.bean;
+package by.jrr.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Car {
+public class CarDto {
 
     private String make;
-    private int numberOfSeats;
-    private CarType type;
+    private int seatCount;
+    private String type;
 
     //constructor, getters, setters etc.
 }

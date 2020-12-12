@@ -1,9 +1,9 @@
 package by.jrr.mapstruct;
 
 import by.jrr.mapstruct.mapper.UserMapper;
-import by.jrr.objectmapper.bean.Human;
-import by.jrr.objectmapper.bean.Person;
-import by.jrr.objectmapper.model.UserDTO;
+import by.jrr.bean.Human;
+import by.jrr.bean.Person;
+import by.jrr.bean.UserDTO;
 import org.junit.jupiter.api.Test;
 
 public class ConvertUserDtoToOtherTests {

@@ -1,8 +1,8 @@
-package by.jrr.objectmapper;
+package by.jrr;
 
-import by.jrr.objectmapper.bean.Human;
-import by.jrr.objectmapper.bean.Person;
-import by.jrr.objectmapper.model.UserDTO;
+import by.jrr.bean.Human;
+import by.jrr.bean.Person;
+import by.jrr.bean.UserDTO;
 import by.jrr.objectmapper.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.SpringApplication;

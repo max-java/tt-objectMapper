@@ -1,4 +1,4 @@
-package by.jrr.objectmapper.model;
+package by.jrr.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDTO {
-
-    String userName;
-    String userLastName;
-
+public class Person {
+    Long id;
+    String name;
+    String lastName;
 }

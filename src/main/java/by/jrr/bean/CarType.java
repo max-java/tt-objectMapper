@@ -1,4 +1,4 @@
-package by.jrr.mapstruct.bean;
+package by.jrr.bean;
 
 public enum CarType {
     SEDAN

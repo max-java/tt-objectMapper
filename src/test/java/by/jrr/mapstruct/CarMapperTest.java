@@ -1,8 +1,8 @@
 package by.jrr.mapstruct;
 
-import by.jrr.mapstruct.bean.Car;
-import by.jrr.mapstruct.bean.CarDto;
-import by.jrr.mapstruct.bean.CarType;
+import by.jrr.bean.Car;
+import by.jrr.bean.CarDto;
+import by.jrr.bean.CarType;
 import by.jrr.mapstruct.mapper.CarMapper;
 import org.junit.jupiter.api.Test;
 

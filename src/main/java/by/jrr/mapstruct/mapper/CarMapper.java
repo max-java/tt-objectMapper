@@ -1,7 +1,7 @@
 package by.jrr.mapstruct.mapper;
 
-import by.jrr.mapstruct.bean.Car;
-import by.jrr.mapstruct.bean.CarDto;
+import by.jrr.bean.Car;
+import by.jrr.bean.CarDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

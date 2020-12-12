@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
-import static by.jrr.objectmapper.ObjectMapperApplication.RESOURCES;
+import static by.jrr.ObjectMapperApplication.RESOURCES;
 
 public class ResourcesIO {
 

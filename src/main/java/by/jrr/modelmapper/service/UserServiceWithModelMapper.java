@@ -1,29 +1,21 @@
-package by.jrr.objectmapper.service;
+package by.jrr.modelmapper.service;
 
 import by.jrr.bean.Human;
 import by.jrr.bean.Person;
 import by.jrr.bean.UserDTO;
 import by.jrr.objectmapper.repository.PersonRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService {
+public class UserServiceWithModelMapper {
 
     @Autowired
     PersonRepository personRepository;
 
     @Autowired
-    @Qualifier("personToUserMapper")
-    ObjectMapper personToUserMapper;
-    @Autowired
-    @Qualifier("userToPersonMapper")
-    ObjectMapper userToPersonMapper;
-    @Autowired
-    @Qualifier("userToHumanMapper")
-    ObjectMapper userToHumanMapper;
+    ModelMapper mapper;
 
     public UserDTO getUserById(long id) {
         Person person = personRepository.findPersonById(id);
@@ -39,14 +31,15 @@ public class UserService {
     }
 
     public UserDTO mapPersonToUserWithMapper(Person person) {
-        return personToUserMapper.convertValue(person, UserDTO.class);
+        UserDTO result = mapper.map(person, UserDTO.class);
+        return result;
     }
 
     public Person mapUserToPersonWithMapper(UserDTO userDTO) {
-        return userToPersonMapper.convertValue(userDTO, Person.class);
+        return mapper.map(userDTO, Person.class);
     }
 
     public Human mapUserToHumanWithMapper(UserDTO userDTO) {
-        return userToHumanMapper.convertValue(userDTO, Human.class);
+        return mapper.map(userDTO, Human.class);
     }
 }

@@ -1,7 +1,7 @@
 package by.jrr.objectmapper.config;
 
-import by.jrr.objectmapper.bean.Person;
-import by.jrr.objectmapper.model.UserDTO;
+import by.jrr.bean.Person;
+import by.jrr.bean.UserDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

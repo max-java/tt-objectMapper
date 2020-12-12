@@ -1,10 +1,10 @@
 package by.jrr.objectmapper.util;
 
-import by.jrr.objectmapper.bean.Human;
-import by.jrr.objectmapper.bean.Person;
+import by.jrr.bean.Human;
+import by.jrr.bean.Person;
 import by.jrr.objectmapper.config.DataBaseConnection;
 import by.jrr.objectmapper.model.PersonToUserMixIn;
-import by.jrr.objectmapper.model.UserDTO;
+import by.jrr.bean.UserDTO;
 import by.jrr.objectmapper.service.UserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;

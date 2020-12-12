@@ -1,8 +1,8 @@
 package by.jrr.mapstruct.mapper;
 
-import by.jrr.objectmapper.bean.Human;
-import by.jrr.objectmapper.bean.Person;
-import by.jrr.objectmapper.model.UserDTO;
+import by.jrr.bean.Human;
+import by.jrr.bean.Person;
+import by.jrr.bean.UserDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
